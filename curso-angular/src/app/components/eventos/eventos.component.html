@@ -1,0 +1,14 @@
+<div class="class">
+
+    <h1> AQUI É A PÁGINA 5 </h1>
+    <h2> Abaixo vamos testar eventos </h2>
+    <p *ngIf="show">aparecendo</p>
+    <p *ngIf="name">Nome: {{ nome }} </p>
+    <p *ngIf="name">Email: {{userData.email}}</p>
+    <p *ngIf="name">Ocupação: {{userData.cargo}} </p>
+    <p *ngIf="name">Endereço: {{userInfo.endereco}} </p>
+    <p *ngIf="name">Numero: {{userInfo.numero}} </p>
+
+    <button (click)="showName()" > Informações do cliente</button>
+    
+</div>
