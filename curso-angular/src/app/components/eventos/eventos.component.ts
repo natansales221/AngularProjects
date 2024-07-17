@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class EventosComponent implements OnInit {
   show: boolean = false;
   name: boolean = true;
-  nome: string = 'ailto'
+  nome: string = 'lenadro'
   userData = {
-    email: "luiz.souza@camilo",
-    cargo: "analista"
+    email: "lenadro.mente@senaque",
+    cargo: "assistente"
   };
   userInfo = {
-    endereco: "areias alves",
-    numero: 116
+    endereco: "joao santa ana",
+    numero: 8
   }
 
   constructor() { }
