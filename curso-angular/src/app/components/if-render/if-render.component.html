@@ -3,11 +3,11 @@
 <div class="class">
     <h1> AQUI É A PAGINA 4 </h1>
     <h2> Aqui está sendo testado if else</h2>
-    <div *ngIf="canShow"> SERA QUE PODE APARECER? </div>
-    <div *ngIf="beautyNatan; else nameNotFound"> Se isso aparecer, o Natan é gato</div>
+    <p *ngIf="canShow"> SERA QUE PODE APARECER? </p>
+    <p *ngIf="beautyNatan; else nameNotFound"> Se isso aparecer, o Natan é gato</p>
     <ng-template #nameNotFound>
-         <div> Se isso aparecer, o Natan nao é gato</div>
+         <p> Se isso aparecer, o Natan nao é gato</p>
     </ng-template>
-    <div *ngIf="outroTeste !== 31">teste do sinal de diferente: !== </div>
-    <div *ngIf="outroTeste === 30">teste do sinal de igual: ===</div>
+    <p *ngIf="outroTeste !== 31">teste do sinal de diferente: !== </p>
+    <p *ngIf="outroTeste === 30">teste do sinal de igual: ===</p>
 </div>
