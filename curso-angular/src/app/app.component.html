@@ -1,19 +1,16 @@
+<p> header </p>
 <div class="class">
-    <h1> AQUI É A PAGINA 1 </h1>
-    <h2> APRESENTAÇÃO </h2>
-    
-    <p> Seja bem vindo ao projeto "Não sabemos o que está acontecendo"!</p>
-    
-    <p> Aqui não sabemos mexer num front-end, então está tudo bagunçado</p>
-    <p> Inícios de páginas são marcados com letras grandes e vermelhas e
-        a partir daqui se iniciarão testes, então seja paciente </p>
+    <nav>
+        <a routerLink="/"> Home </a>
+        <a routerLink="/first"> First Component </a>
+        <a routerLink="/parent-data"> Parent data</a>
+        <a routerLink="/if-render"> If Render </a>
+        <a routerLink="/eventos"> Eventos </a>
+        <a routerLink="/emitter"> Emitter </a>
+        <a routerLink="/list"> Lista </a>
+        <a routerLink="/pipes"> Pipes </a>
+        <a routerLink="/two-way"> Two-way </a>
+    </nav>
 </div>
-
-<app-first-component></app-first-component>
-<app-parent-data [name]="userName" [userData]="userData" [userInfo]="userInfo"></app-parent-data>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<router-outlet></router-outlet>
+<p> footer</p>

@@ -26,3 +26,8 @@ p{
 li {
     color:black
 }
+
+a{ 
+    color:red;
+    margin-left: 10px
+}
