@@ -10,12 +10,7 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent implements OnInit {
-  animals: Animal[] = [
-    { name: "maya" , type: "cachorro", age: 4  },
-    { name: "tom"  , type: "gato"    , age: 5  },
-    { name: "jerry", type: "rato"    , age: 8  },
-    { name: "jegue", type: "cavalo"  , age: 28 },
-  ];
+  animals: Animal[] = [];
 
   animal: Animal = {
     name: "Teste",
@@ -23,7 +18,13 @@ export class ListRenderComponent implements OnInit {
     age: 45
   };
 
-  constructor(private listService: ListService) { }
+  constructor(private listService: ListService) {
+    this.getAnimals()
+   }
+
+  getAnimals(): void{
+    this.listService.getAll().subscribe((animals)=> (this.animals = animals));
+  }
 
   animalDetails = '';
 

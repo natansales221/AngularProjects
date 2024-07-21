@@ -1,0 +1,10 @@
+{  
+    "animals":
+    [
+    { "id": 0, "name": "maya" ,  "type": "cachorro",   "age": 4  },
+    { "id": 1, "name": "tom"  ,  "type": "gato"    ,   "age": 5  },
+    { "id": 2, "name": "jerry",  "type": "rato"    ,   "age": 8  },
+    { "id": 3, "name": "jegue",  "type": "cavalo"  ,   "age": 28 },
+    { "id": 4, "name": "helton", "type": "burro"  , "age": 22 }
+  ]
+}
