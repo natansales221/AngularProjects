@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EmitterComponent implements OnInit {
 
   myNumber: number = 0
+  myNumber2: number = 10
 
   onChangeNumber()  {
     this.myNumber = Math.floor(Math.random() * 10)
@@ -19,4 +20,8 @@ export class EmitterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onChangeNumber2()  {
+    this.myNumber2 = Math.floor(Math.random() * 100)
+    console.log("mudou em")
+  }
 }
