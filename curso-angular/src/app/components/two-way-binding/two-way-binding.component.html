@@ -1,0 +1,18 @@
+<div class="class">
+    <h1> AQUI É A PAGINA 9 </h1>
+    <h2> Aqui aprenderemos o que é two way binding </h2>
+
+    <form> 
+        <input 
+        type="text" 
+        [(ngModel)]="name"
+        name="name"
+        placeholder="Digite seu nome: "
+        />
+        <input type="submit" value="Entrar"> 
+    </form>
+    <div *ngIf="name !== ''">
+        <p> O nome é {{name}}</p>
+    </div>
+</div>
+
