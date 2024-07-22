@@ -12,16 +12,19 @@ import { Observable } from 'rxjs';
 })
 export class ListService {
 
-  private apiUrl = 'http://localhost:3000/animals'
+  private apiUrl = 'http://localhost:3000/animals';
 
   constructor(private http: HttpClient) { }
 
   remove(animals: Animal[], animal: Animal){
-    return animals.filter((a)=> animal.name !== a.name)
-    console.log("ativando service")
+    return animals.filter((a)=> animal.name !== a.name);
   }
 
   getAll(): Observable<Animal[]> {
-    return this.http.get<Animal[]>(this.apiUrl)
+    return this.http.get<Animal[]>(this.apiUrl);
+  }
+
+  getItem(id: number): Observable<Animal> {
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`);
   }
 }

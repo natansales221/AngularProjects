@@ -5,7 +5,7 @@
     <h3> Animais: </h3>
     <ul>
         <li *ngFor="let animal of animals"> 
-            O nome do {{ animal.type }} é {{ animal.name }}
+            <a routerLink="/list/{{animal.id}}">{{ animal.name }}</a> é um(a) {{ animal.type }}
             <button (click)="showAge(animal)"> Show age</button>
             <button (click)="removeAnimal(animal)"> Excluir</button>
         </li>        
